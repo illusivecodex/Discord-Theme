@@ -1,5 +1,5 @@
 {
-  "name": "iLLusive",
+  "name": "Gutz",
   "description": "Gutz",
   "version": "1",
   "authors": [
@@ -308,7 +308,7 @@
   },
   "spec": 2,
   "background": {
-    "url": "https://pin.it/4Ye05gLcD",
+    "url": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/Gutz.png",
     "alpha": 0.78,
     "size": "auto",
     "position": "center"

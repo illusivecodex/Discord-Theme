@@ -1,7 +1,7 @@
 {
     "name": "Just the Two of Us",
     "description": "Creating our own world, together. Just you and me.",
-    "version": "10.0.0",
+    "version": "10.1.0",
     "authors": [
         {
             "name": "iLLusive Studio",
@@ -32,14 +32,14 @@
         "BACKGROUND_SECONDARY": [ "#8082A6" ],
         "BACKGROUND_SECONDARY_ALT": [ "#8082A6" ],
         "BACKGROUND_SURFACE_RAISED": [ "#8082A6" ],
-        "BACKGROUND_TERTIARY": [ "#8082A6" ],
+        "BACKGROUND_TERTIARY": [ "#46334F" ],
         "BG_BASE_PRIMARY": [ "#46334F" ],
         "BG_BACKDROP": [ "#46334FB2" ],
         "BG_BASE_SECONDARY": [ "#8082A6" ],
-        "BG_BASE_TERTIARY": [ "#8082A6" ],
+        "BG_BASE_TERTIARY": [ "#46334F" ],
         "BG_MOD_FAINT": [ "#FFFFFF12" ],
         "HOME_BACKGROUND": [ "#46334F" ],
-        "PANEL_BG": [ "#8082A6" ],
+        "PANEL_BG": [ "#46334F" ],
         "BORDER_FAINT": [ "#FFFFFF12" ],
         "BORDER_SUBTLE": [ "#FFFFFF1c" ],
         "BORDER_STRONG": [ "#FFFFFF26" ],
@@ -148,16 +148,16 @@
         "PRIMARY_330": "#FFFFFF",
         "PRIMARY_360": "#F2921D",
         "PRIMARY_400": "#F24F13",
-        "PRIMARY_460": "#8082A6",
+        "PRIMARY_460": "#46334F",
         "PRIMARY_500": "#F2921D",
         "PRIMARY_530": "#F2921D",
         "PRIMARY_600": "#46334F",
-        "PRIMARY_630": "#8082A6",
-        "PRIMARY_645": "#8082A6",
-        "PRIMARY_660": "#8082A6",
-        "PRIMARY_700": "#8082A6",
-        "PRIMARY_730": "#F2921D",
-        "PRIMARY_800": "#8082A6",
+        "PRIMARY_630": "#46334F",
+        "PRIMARY_645": "#46334F",
+        "PRIMARY_660": "#46334F",
+        "PRIMARY_700": "#46334F",
+        "PRIMARY_730": "#46334F",
+        "PRIMARY_800": "#46334F",
         "GREEN_260": "#F2921D",
         "GREEN_300": "#F2921D",
         "GREEN_330": "#F2921D",
@@ -226,9 +226,9 @@
         "WHITE_630": "#F2C230",
         "PRIMARY_DARK_700": "#46334F",
         "PRIMARY_DARK_800": "#46334F",
-        "PRIMARY_DARK_600": "#8082A6",
-        "PRIMARY_DARK_630": "#8082A6",
-        "PRIMARY_DARK_660": "#8082A6",
+        "PRIMARY_DARK_600": "#46334F",
+        "PRIMARY_DARK_630": "#46334F",
+        "PRIMARY_DARK_660": "#46334F",
         "PRIMARY_DARK_200": "#FFFFFF"
     },
     "plus": {
@@ -239,7 +239,7 @@
     "background": {
         "blur": 0,
         "url": "https://cdn.discordapp.com/attachments/1558846784623738891/1560472641427611778/1771185261668.png?ex=6ad2d6e5&is=6ad18565&hm=0e090c7fe8338d71b73662245e9e17fb56e81ca3befbd2b592446e81fdbd52b4&",
-        "alpha": 0.15
+        "alpha": 0.20
     },
     "spec": 2
 }

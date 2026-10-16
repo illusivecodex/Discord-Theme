@@ -1,7 +1,7 @@
 {
     "name": "Just the Two of Us",
     "description": "Creating our own world, together. Just you and me.",
-    "version": "14.0.0",
+    "version": "15.0.0",
     "authors": [
         {
             "name": "iLLusive Studio",
@@ -39,7 +39,7 @@
         "BG_BASE_TERTIARY": [ "#46334F" ],
         "BG_MOD_FAINT": [ "#FFFFFF12" ],
         "HOME_BACKGROUND": [ "#46334F" ],
-        "PANEL_BG": [ "#8082A6" ],
+        "PANEL_BG": [ "#46334F" ],
         "BORDER_FAINT": [ "#FFFFFF12" ],
         "BORDER_SUBTLE": [ "#FFFFFF1c" ],
         "BORDER_STRONG": [ "#FFFFFF26" ],
@@ -54,7 +54,7 @@
         "INPUT_BACKGROUND_DEFAULT": [ "#8082A6" ],
         "INTERACTIVE_ACTIVE": [ "#F2C230" ],
         "INTERACTIVE_HOVER": [ "#F2921D" ],
-        "INTERACTIVE_MUTED": [ "#8082A6" ],
+        "INTERACTIVE_MUTED": [ "#FFFFFF" ],
         "INTERACTIVE_NORMAL": [ "#FFFFFF" ],
         "INTERACTIVE_TEXT_DEFAULT": [ "#FFFFFF" ],
         "MENTION_BACKGROUND": [ "rgba(242, 79, 19, 0.15)" ],
@@ -77,7 +77,7 @@
         "POLLS_NORMAL_IMAGE_BACKGROUND": [ "#8082A6" ],
         "POLLS_VICTOR_FILL": [ "#43b58180" ],
         "TEXT_LINK": [ "#F2C230" ],
-        "TEXT_MUTED": [ "#8082A6" ],
+        "TEXT_MUTED": [ "#FFFFFF" ],
         "TEXT_NORMAL": [ "#FFFFFF" ],
         "TEXT_PRIMARY": [ "#FFFFFF" ],
         "TEXT_SECONDARY": [ "#FFFFFF" ],
@@ -239,7 +239,7 @@
     "background": {
         "blur": 0,
         "url": "https://cdn.discordapp.com/attachments/1558846784623738891/1560472641427611778/1771185261668.png?ex=6ad2d6e5&is=6ad18565&hm=0e090c7fe8338d71b73662245e9e17fb56e81ca3befbd2b592446e81fdbd52b4&",
-        "alpha": 0.10
+        "alpha": 0.50
     },
     "spec": 2
 }

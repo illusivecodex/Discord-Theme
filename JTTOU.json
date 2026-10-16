@@ -1,7 +1,7 @@
 {
     "name": "Just the Two of Us",
     "description": "Creating our own world, together. Just you and me.",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "authors": [
         {
             "name": "iLLusive Studio"
@@ -16,25 +16,25 @@
         "INTERACTIVE_HOVER": ["#F2921D"],
         "INTERACTIVE_ACTIVE": ["#F2921D"],
         "INTERACTIVE_MUTED": ["#8082A6"],
-        "BACKGROUND_PRIMARY": ["rgba(44, 32, 50, 0.65)"],
+        "BACKGROUND_PRIMARY": ["rgba(0, 0, 0, 0)"],
         "CARD_PRIMARY_BG": ["rgba(70, 51, 79, 0.85)"],
-        "BG_BASE_PRIMARY": ["rgba(44, 32, 50, 0.65)"],
+        "BG_BASE_PRIMARY": ["rgba(0, 0, 0, 0)"],
         "BACKGROUND_SECONDARY": ["rgba(70, 51, 79, 0.85)"],
         "CARD_SECONDARY_BG": ["rgba(70, 51, 79, 0.85)"],
         "BG_BASE_SECONDARY": ["rgba(70, 51, 79, 0.85)"],
         "BACKGROUND_SECONDARY_ALT": ["rgba(70, 51, 79, 0.85)"],
-        "BACKGROUND_TERTIARY": ["rgba(44, 32, 50, 0.65)"],
-        "BG_BASE_TERTIARY": ["rgba(44, 32, 50, 0.65)"],
+        "BACKGROUND_TERTIARY": ["rgba(0, 0, 0, 0)"],
+        "BG_BASE_TERTIARY": ["rgba(0, 0, 0, 0)"],
         "BACKGROUND_ACCENT": ["#F24F13"],
-        "BACKGROUND_MOBILE_PRIMARY": ["rgba(44, 32, 50, 0.65)"],
+        "BACKGROUND_MOBILE_PRIMARY": ["rgba(0, 0, 0, 0)"],
         "BACKGROUND_MOBILE_SECONDARY": ["rgba(70, 51, 79, 0.85)"],
-        "CHAT_BACKGROUND": ["rgba(44, 32, 50, 0.65)"],
-        "ANDROID_NAVIGATION_SCRIM_BACKGROUND": ["rgba(44, 32, 50, 0.65)"],
+        "CHAT_BACKGROUND": ["rgba(0, 0, 0, 0)"],
+        "ANDROID_NAVIGATION_SCRIM_BACKGROUND": ["rgba(0, 0, 0, 0)"],
         "BACKGROUND_MESSAGE_HOVER": ["rgba(242, 194, 48, 0.05)"],
         "BACKGROUND_MODIFIER_HOVER": ["rgba(242, 194, 48, 0.08)"],
         "BACKGROUND_MODIFIER_ACTIVE": ["rgba(242, 194, 48, 0.12)"],
         "BACKGROUND_MODIFIER_SELECTED": ["rgba(242, 194, 48, 0.15)"],
-        "BACKGROUND_MODIFIER_ACCENT": ["rgba(242, 79, 19, 0.20)"],
+        "BACKGROUND_MODIFIER_ACCENT": ["rgba(128, 130, 166, 0.30)"],
         "BACKGROUND_MENTIONED": ["rgba(242, 79, 19, 0.20)"],
         "BACKGROUND_MENTIONED_HOVER": ["rgba(242, 79, 19, 0.30)"],
         "CHANNELTEXTAREA_BACKGROUND": ["#8082A6"],
@@ -134,7 +134,7 @@
     "background": {
         "blur": 0,
         "url": "https://cdn.discordapp.com/attachments/1558846784623738891/1560472641427611778/1771185261668.png?ex=6ad2d6e5&is=6ad18565&hm=0e090c7fe8338d71b73662245e9e17fb56e81ca3befbd2b592446e81fdbd52b4&",
-        "alpha": 0.15
+        "alpha": 0.12
     },
     "spec": 2
 }

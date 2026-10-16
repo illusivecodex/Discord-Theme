@@ -1,0 +1,116 @@
+/**
+ * @name Gutz
+ * @author iLLusive Studio
+ * @version 2.0.0
+ * @description Gutz Red & Black Theme - High Contrast Icons
+ * @authorId 879393496627306587
+ */
+
+:root,
+.theme-dark,
+.theme-light,
+html.theme-dark,
+html.theme-light {
+  /* Core iLLusive Palette Variables */
+  --illusive-bg-main: #050505;
+  --illusive-bg-dark: #480505;
+  --illusive-accent: #FF0000;
+  --illusive-text-main: #FB3737;
+  --illusive-text-muted: #B9B6B6;
+  --illusive-link: #B84747;
+  --illusive-bg-url: url("https://cdn.discordapp.com/attachments/1558846784623738891/1560768986541723740/4k_Heroic_Wallpaper.jpeg?ex=6ad3eae4&is=6ad29964&hm=28537fbf8a1ddaa554bcc497246d86d8c75b464679840b7b3b00569d2bc65b35");
+  --illusive-bg-opacity: 0.4;
+  --illusive-bg-blur: 0px;
+
+  /* Discord Desktop Surface Overrides */
+  --background-primary: rgba(5, 5, 5, 0.52) !important;
+  --background-secondary: rgba(72, 5, 5, 0.62) !important;
+  --background-secondary-alt: rgba(72, 5, 5, 0.72) !important;
+  --background-tertiary: rgba(72, 5, 5, 0.82) !important;
+  --background-accent: #FF0000 !important;
+  --background-floating: rgba(72, 5, 5, 0.95) !important;
+  --bg-overlay-chat: rgba(5, 5, 5, 0.52) !important;
+  --bg-base-primary: rgba(5, 5, 5, 0.52) !important;
+  --bg-base-secondary: rgba(72, 5, 5, 0.62) !important;
+  --bg-base-tertiary: rgba(72, 5, 5, 0.82) !important;
+  --home-background: rgba(5, 5, 5, 0.52) !important;
+  --channeltextarea-background: rgba(72, 5, 5, 0.78) !important;
+
+  /* Typography & Interactive Icons */
+  --header-primary: #FB3737 !important;
+  --header-secondary: #B9B6B6 !important;
+  --text-normal: #FB3737 !important;
+  --text-muted: #B9B6B6 !important;
+  --text-link: #B84747 !important;
+  --channels-default: #B9B6B6 !important;
+  --interactive-normal: #FB3737 !important;
+  --interactive-hover: #B9B6B6 !important;
+  --interactive-active: #FB3737 !important;
+  --interactive-muted: rgba(185, 182, 182, 0.55) !important;
+
+  /* Brand, Mentions & Modifiers */
+  --brand-experiment: #FF0000 !important;
+  --brand-experiment-560: #480505 !important;
+  --background-mentioned: rgba(255, 0, 0, 0.22) !important;
+  --background-mentioned-hover: rgba(255, 0, 0, 0.34) !important;
+  --info-warning-foreground: #FF0000 !important;
+  --background-message-hover: rgba(72, 5, 5, 0.25) !important;
+  --background-modifier-hover: rgba(72, 5, 5, 0.3) !important;
+  --background-modifier-active: rgba(72, 5, 5, 0.45) !important;
+  --background-modifier-selected: rgba(255, 0, 0, 0.38) !important;
+  --background-modifier-accent: rgba(72, 5, 5, 0.35) !important;
+
+  /* Scrollbars */
+  --scrollbar-thin-thumb: #480505 !important;
+  --scrollbar-thin-track: transparent !important;
+  --scrollbar-auto-thumb: #480505 !important;
+  --scrollbar-auto-track: transparent !important;
+}
+
+/* Wallpaper Backdrop & Transparency Engine */
+body {
+  background-color: var(--illusive-bg-main) !important;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: var(--illusive-bg-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: var(--illusive-bg-opacity);
+  filter: blur(var(--illusive-bg-blur));
+  transform: scale(1.06) translateZ(0);
+  pointer-events: none;
+  z-index: -1;
+}
+#app-mount,
+[class*="app_"],
+[class*="bg_"],
+[class*="layer_"],
+[class*="chat_"],
+[class*="chatContent_"],
+[class*="container_"],
+[class*="sidebar_"],
+[class*="panels_"],
+[class*="privateChannels_"],
+[class*="scroller_"],
+[class*="members_"],
+[class*="member_"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+[class*="sidebar_"] {
+  background-color: rgba(72, 5, 5, 0.62) !important;
+  backdrop-filter: blur(4px);
+}
+[class*="chatContent_"] {
+  background-color: rgba(5, 5, 5, 0.52) !important;
+}
+[class*="panels_"] {
+  background-color: rgba(72, 5, 5, 0.82) !important;
+}
+[class*="scrollableContainer_"] {
+  background-color: rgba(72, 5, 5, 0.78) !important;
+}

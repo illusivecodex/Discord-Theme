@@ -52,7 +52,7 @@
             "#480505"
         ],
         "CHANNELS_DEFAULT": [
-            "#E6E6E6"
+            "#D21E1E"
         ],
         "BACKGROUND_MESSAGE_HOVER": [
             "rgba(72, 5, 5, 0.15)"
@@ -121,34 +121,34 @@
             "#050505"
         ],
         "CHANNEL_ICON": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "EMBED_BACKGROUND": [
             "#050505"
         ],
         "HEADER_PRIMARY": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "HEADER_SECONDARY": [
-            "#E6E6E6"
+            "#D21E1E"
         ],
         "INTERACTIVE_ACTIVE": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "INTERACTIVE_HOVER": [
-            "#E6E6E6"
+            "#D21E1E"
         ],
         "INTERACTIVE_MUTED": [
-            "#E6E6E699"
+            "#D21E1E99"
         ],
         "INTERACTIVE_NORMAL": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "MENTION_BACKGROUND": [
             "#5F63644D"
         ],
         "MENTION_FOREGROUND": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": [
             "#050505"
@@ -157,16 +157,16 @@
             "#050505"
         ],
         "REDESIGN_BUTTON_SECONDARY_BORDER": [
-            "rgba(230, 230, 230, 0.4)"
+            "rgba(210, 30, 30, 0.4)"
         ],
         "REDESIGN_BUTTON_DANGER_BACKGROUND": [
             "#5F6364"
         ],
         "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "REDESIGN_CHANNEL_NAME_TEXT": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "REDESIGN_CHAT_INPUT_BACKGROUND": [
             "#050505"
@@ -181,7 +181,7 @@
             "#5F6364"
         ],
         "STATUS_DANGER_TEXT": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "POLLS_NORMAL_FILL_HOVER": [
             "#480505"
@@ -196,19 +196,19 @@
             "#878282"
         ],
         "TEXT_MUTED": [
-            "#E6E6E6"
+            "#D21E1E"
         ],
         "TEXT_NORMAL": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "TEXT_PRIMARY": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "TEXT_SECONDARY": [
-            "#E6E6E6"
+            "#D21E1E"
         ],
         "TEXT_DEFAULT": [
-            "#E62323"
+            "#ACAAAA"
         ],
         "BG_MOD_FAINT": [
             "rgba(72, 5, 5, 0.15)"
@@ -246,7 +246,7 @@
         "BLUE_660": "#050505",
         "BLUE_700": "#050505",
         "BLACK_500": "#480505B2",
-        "BRAND_200": "#E62323",
+        "BRAND_200": "#ACAAAA",
         "BRAND_260": "#5F6364",
         "BRAND_300": "#5F6364",
         "BRAND_330": "#5F6364",
@@ -263,20 +263,20 @@
         "BRAND_660": "#050505",
         "BRAND_700": "#050505",
         "BRAND_730": "#050505",
-        "PLUM_1": "#E62323",
-        "PLUM_2": "#E62323",
-        "PLUM_3": "#E62323",
-        "PLUM_4": "#E62323",
-        "PLUM_5": "#E6E6E6",
-        "PLUM_6": "#E6E6E6",
-        "PLUM_7": "#E6E6E6",
-        "PLUM_8": "#E6E6E6",
-        "PLUM_9": "#E6E6E6",
-        "PLUM_10": "#E6E6E6",
-        "PLUM_11": "#E6E6E6",
-        "PLUM_12": "#E6E6E6",
-        "PLUM_13": "#E6E6E6",
-        "PLUM_14": "#E6E6E6",
+        "PLUM_1": "#ACAAAA",
+        "PLUM_2": "#ACAAAA",
+        "PLUM_3": "#ACAAAA",
+        "PLUM_4": "#ACAAAA",
+        "PLUM_5": "#D21E1E",
+        "PLUM_6": "#D21E1E",
+        "PLUM_7": "#D21E1E",
+        "PLUM_8": "#D21E1E",
+        "PLUM_9": "#D21E1E",
+        "PLUM_10": "#D21E1E",
+        "PLUM_11": "#D21E1E",
+        "PLUM_12": "#D21E1E",
+        "PLUM_13": "#D21E1E",
+        "PLUM_14": "#D21E1E",
         "PLUM_15": "#050505",
         "PLUM_16": "#050505",
         "PLUM_17": "#050505",
@@ -288,10 +288,10 @@
         "PLUM_23": "#050505",
         "PLUM_24": "#050505",
         "PLUM_25": "#050505",
-        "PRIMARY_100": "#E62323",
-        "PRIMARY_200": "#E62323",
-        "PRIMARY_300": "#E62323",
-        "PRIMARY_330": "#E62323",
+        "PRIMARY_100": "#ACAAAA",
+        "PRIMARY_200": "#ACAAAA",
+        "PRIMARY_300": "#ACAAAA",
+        "PRIMARY_330": "#ACAAAA",
         "PRIMARY_360": "#050505",
         "PRIMARY_400": "#050505",
         "PRIMARY_460": "#050505",
@@ -337,7 +337,7 @@
         "RED_630": "#5F6364",
         "RED_660": "#5F6364",
         "RED_700": "#5F6364",
-        "ROLE_DEFAULT": "#E62323",
+        "ROLE_DEFAULT": "#ACAAAA",
         "ORANGE_260": "#050505",
         "ORANGE_300": "#050505",
         "ORANGE_330": "#050505",
@@ -353,23 +353,23 @@
         "ORANGE_630": "#050505",
         "ORANGE_660": "#050505",
         "ORANGE_700": "#050505",
-        "YELLOW_260": "#E6E6E6",
-        "YELLOW_300": "#E6E6E6",
-        "YELLOW_330": "#E6E6E6",
-        "YELLOW_345": "#E6E6E6",
-        "YELLOW_360": "#E6E6E6",
-        "YELLOW_400": "#E6E6E6",
-        "YELLOW_430": "#E6E6E6",
-        "YELLOW_460": "#E6E6E6",
-        "YELLOW_500": "#E6E6E6",
-        "YELLOW_530": "#E6E6E6",
-        "YELLOW_560": "#E6E6E6",
-        "YELLOW_600": "#E6E6E6",
-        "YELLOW_630": "#E6E6E6",
-        "YELLOW_660": "#E6E6E6",
-        "YELLOW_700": "#E6E6E6",
-        "WHITE_500": "#E62323",
-        "WHITE_630": "#E6E6E6"
+        "YELLOW_260": "#D21E1E",
+        "YELLOW_300": "#D21E1E",
+        "YELLOW_330": "#D21E1E",
+        "YELLOW_345": "#D21E1E",
+        "YELLOW_360": "#D21E1E",
+        "YELLOW_400": "#D21E1E",
+        "YELLOW_430": "#D21E1E",
+        "YELLOW_460": "#D21E1E",
+        "YELLOW_500": "#D21E1E",
+        "YELLOW_530": "#D21E1E",
+        "YELLOW_560": "#D21E1E",
+        "YELLOW_600": "#D21E1E",
+        "YELLOW_630": "#D21E1E",
+        "YELLOW_660": "#D21E1E",
+        "YELLOW_700": "#D21E1E",
+        "WHITE_500": "#ACAAAA",
+        "WHITE_630": "#D21E1E"
     },
     "plus": {
         "version": "0",
@@ -379,10 +379,10 @@
         "icons": {
             "trash": "#5F6364",
             "TrashIcon": "#5F6364",
-            "TriangleExclamationPointIcon": "#E6E6E6",
-            "toast_copy_link": "#E6E6E6",
-            "toast_copy_message": "#E62323",
-            "toast_image_saved": "#E62323"
+            "TriangleExclamationPointIcon": "#D21E1E",
+            "toast_copy_link": "#D21E1E",
+            "toast_copy_message": "#ACAAAA",
+            "toast_image_saved": "#ACAAAA"
         }
     },
     "background": {

@@ -121,19 +121,19 @@
             "#050505"
         ],
         "CHANNEL_ICON": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "EMBED_BACKGROUND": [
             "#050505"
         ],
         "HEADER_PRIMARY": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "HEADER_SECONDARY": [
             "#B9B6B6"
         ],
         "INTERACTIVE_ACTIVE": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "INTERACTIVE_HOVER": [
             "#B9B6B6"
@@ -142,13 +142,13 @@
             "#B9B6B699"
         ],
         "INTERACTIVE_NORMAL": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "MENTION_BACKGROUND": [
             "#FF00004D"
         ],
         "MENTION_FOREGROUND": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": [
             "#050505"
@@ -163,10 +163,10 @@
             "#FF0000"
         ],
         "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "REDESIGN_CHANNEL_NAME_TEXT": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "REDESIGN_CHAT_INPUT_BACKGROUND": [
             "#050505"
@@ -181,7 +181,7 @@
             "#FF0000"
         ],
         "STATUS_DANGER_TEXT": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "POLLS_NORMAL_FILL_HOVER": [
             "#480505"
@@ -193,22 +193,22 @@
             "#FF000080"
         ],
         "TEXT_LINK": [
-            "#878282"
+            "#B84747"
         ],
         "TEXT_MUTED": [
             "#B9B6B6"
         ],
         "TEXT_NORMAL": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "TEXT_PRIMARY": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "TEXT_SECONDARY": [
             "#B9B6B6"
         ],
         "TEXT_DEFAULT": [
-            "#ACAAAA"
+            "#FB3737"
         ],
         "BG_MOD_FAINT": [
             "rgba(72, 5, 5, 0.15)"
@@ -246,7 +246,7 @@
         "BLUE_660": "#050505",
         "BLUE_700": "#050505",
         "BLACK_500": "#480505B2",
-        "BRAND_200": "#ACAAAA",
+        "BRAND_200": "#FB3737",
         "BRAND_260": "#FF0000",
         "BRAND_300": "#FF0000",
         "BRAND_330": "#FF0000",
@@ -263,10 +263,10 @@
         "BRAND_660": "#050505",
         "BRAND_700": "#050505",
         "BRAND_730": "#050505",
-        "PLUM_1": "#ACAAAA",
-        "PLUM_2": "#ACAAAA",
-        "PLUM_3": "#ACAAAA",
-        "PLUM_4": "#ACAAAA",
+        "PLUM_1": "#FB3737",
+        "PLUM_2": "#FB3737",
+        "PLUM_3": "#FB3737",
+        "PLUM_4": "#FB3737",
         "PLUM_5": "#B9B6B6",
         "PLUM_6": "#B9B6B6",
         "PLUM_7": "#B9B6B6",
@@ -288,10 +288,10 @@
         "PLUM_23": "#050505",
         "PLUM_24": "#050505",
         "PLUM_25": "#050505",
-        "PRIMARY_100": "#ACAAAA",
-        "PRIMARY_200": "#ACAAAA",
-        "PRIMARY_300": "#ACAAAA",
-        "PRIMARY_330": "#ACAAAA",
+        "PRIMARY_100": "#FB3737",
+        "PRIMARY_200": "#FB3737",
+        "PRIMARY_300": "#FB3737",
+        "PRIMARY_330": "#FB3737",
         "PRIMARY_360": "#050505",
         "PRIMARY_400": "#050505",
         "PRIMARY_460": "#050505",
@@ -337,7 +337,7 @@
         "RED_630": "#FF0000",
         "RED_660": "#FF0000",
         "RED_700": "#FF0000",
-        "ROLE_DEFAULT": "#ACAAAA",
+        "ROLE_DEFAULT": "#FB3737",
         "ORANGE_260": "#050505",
         "ORANGE_300": "#050505",
         "ORANGE_330": "#050505",
@@ -368,7 +368,7 @@
         "YELLOW_630": "#B9B6B6",
         "YELLOW_660": "#B9B6B6",
         "YELLOW_700": "#B9B6B6",
-        "WHITE_500": "#ACAAAA",
+        "WHITE_500": "#FB3737",
         "WHITE_630": "#B9B6B6"
     },
     "plus": {
@@ -381,8 +381,8 @@
             "TrashIcon": "#FF0000",
             "TriangleExclamationPointIcon": "#B9B6B6",
             "toast_copy_link": "#B9B6B6",
-            "toast_copy_message": "#ACAAAA",
-            "toast_image_saved": "#ACAAAA"
+            "toast_copy_message": "#FB3737",
+            "toast_image_saved": "#FB3737"
         }
     },
     "background": {

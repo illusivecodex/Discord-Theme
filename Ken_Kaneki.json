@@ -388,7 +388,7 @@
     "background": {
         "blur": 0,
         "url": "https://cdn.discordapp.com/attachments/1558846784623738891/1560715916314943518/3.jpeg?ex=6ad3b977&is=6ad267f7&hm=6b929da6be81935073bd7347199d2589f7f43d10739eef45dc18af30e05960e2",
-        "alpha": 1
+        "alpha": 0.60
     },
     "spec": 2
 }

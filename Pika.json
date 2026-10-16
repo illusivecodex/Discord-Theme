@@ -1,7 +1,7 @@
 {
     "name": "Pika",
     "description": "For my lovely wiffu Jinssi Cruise",
-    "version": "1.8.0",
+    "version": "1.9.0",
     "authors": [
         {
             "name": "iLLusive Studio"
@@ -133,7 +133,7 @@
     "background": {
         "blur": 0,
         "url": "https://cdn.discordapp.com/attachments/1558846784623738891/1560443092795007096/4c800a5b9574d65a5d839578e212b3e8.jpg?ex=6ad2bb60&is=6ad169e0&hm=23c3f0d3e8228ebe203731629e4fa929516e921307d77e53a2c3959cc8fae51e&",
-        "alpha": 0.75
+        "alpha": 0.5
     },
     "spec": 2
 }

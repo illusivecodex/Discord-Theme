@@ -1,6 +1,6 @@
 {
     "name": "Solo Leveling",
-    "description": "From the 'weakest hunter of all mankind' to an unstoppable force, witness a relentless journey.",
+    "description": "From the \"weakest hunter of all mankind\" to an unstoppable force, witness a relentless journey.",
     "version": "16.0.0",
     "authors": [
         {
@@ -9,39 +9,45 @@
         }
     ],
     "semanticColors": {
-        "BACKGROUND_PRIMARY": ["#601F8F", 1],
-        "BACKGROUND_SECONDARY": ["#601F8F", 1],
-        "BACKGROUND_SECONDARY_ALT": ["#601F8F", 1],
-        "BACKGROUND_TERTIARY": ["#601F8F", 1],
-        "BACKGROUND_ACCENT": ["#9A3B60", 1],
-        "BACKGROUND_FLOATING": ["#601F8F", 1],
-        "BACKGROUND_MOBILE_PRIMARY": ["#601F8F", 1],
-        "BACKGROUND_MOBILE_SECONDARY": ["#601F8F", 1],
-        "BACKGROUND_MENTIONED": ["#9A3B60", 0.2],
-        "BACKGROUND_MENTIONED_HOVER": ["#9A3B60", 0.35],
-        "CHANNELS_DEFAULT": ["#71CAED", 1],
-        "CHANNEL_ICON": ["#71CAED", 1],
-        "INTERACTIVE_ACTIVE": ["#E1A5E7", 1],
-        "INTERACTIVE_HOVER": ["#E1A5E7", 1],
-        "INTERACTIVE_MUTED": ["#71CAED", 1],
-        "INTERACTIVE_NORMAL": ["#E1A5E7", 1],
-        "TEXT_LINK": ["#913252", 1],
-        "TEXT_MUTED": ["#71CAED", 1],
-        "TEXT_NORMAL": ["#E1A5E7", 1],
-        "HEADER_PRIMARY": ["#E1A5E7", 1],
-        "HEADER_SECONDARY": ["#71CAED", 1]
+        "PANEL_BG": [
+            "#601F8F"
+        ],
+        "CHAT_BACKGROUND": [
+            "#601F8F"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#9A3B60"
+        ],
+        "BACKGROUND_FLOATING": [
+            "#601F8F"
+        ],
+        "BACKGROUND_MENTIONED": [
+            "#9A3B6033"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#71CAED"
+        ],
+        "TEXT_LINK": [
+            "#913252"
+        ],
+        "TEXT_MUTED": [
+            "#71CAED"
+        ],
+        "TEXT_NORMAL": [
+            "#E1A5E7"
+        ],
+        "TEXT_PRIMARY": [
+            "#E1A5E7"
+        ]
     },
     "rawColors": {
         "BRAND_500": "#9A3B60",
         "WHITE_500": "#E1A5E7",
-        "WHITE_630": "#71CAED",
-        "PRIMARY_500": "#601F8F",
-        "PRIMARY_600": "#601F8F",
-        "PRIMARY_700": "#601F8F"
+        "WHITE_630": "#71CAED"
     },
     "background": {
         "blur": 0,
-        "url": "https://cdn.discordapp.com/attachments/1558846784623738891/1560725138398384281/Picsart_26-10-17_02-44-06-264.jpg?ex=6ad5138d&is=6ad3c20d&hm=79bae0fae9cf0b06ddca2fec789e93b4bd60d9fa1725b21cad3cba89f82fd9b2",
+        "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe",
         "alpha": 0.5
     },
     "spec": 2

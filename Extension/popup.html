@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iLLusive Studio — Theme Builder</title>
+  <style>
+    :root {
+      --bg-deep: #0b0b12;
+      --surface: #161622;
+      --border: rgba(255, 255, 255, 0.1);
+      --purple: #a855f7;
+      --pink: #ec4899;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    
+    body {
+      width: 100%;
+      max-width: 620px;
+      margin: 0 auto;
+      background-color: var(--bg-deep);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.12) 0px, transparent 50%);
+      color: var(--text-main);
+      padding: 12px;
+      overflow-x: hidden;
+    }
+
+    body.drag-over {
+      outline: 2px dashed var(--purple);
+      outline-offset: -6px;
+    }
+
+    .app-shell { display: flex; flex-direction: column; gap: 12px; }
+
+    /* One-Click Extension Exporter Banner */
+    .ext-export-bar {
+      background: linear-gradient(90deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
+      border: 1px dashed var(--purple);
+      border-radius: 12px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .ext-export-bar span { font-size: 0.72rem; font-weight: 700; color: #e9d5ff; }
+    .ext-dl-btn {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: #fff; border: none; padding: 7px 12px; border-radius: 8px;
+      font-size: 0.72rem; font-weight: 800; cursor: pointer; white-space: nowrap;
+    }
+
+    /* Header */
+    .brand-header {
+      background: linear-gradient(135deg, rgba(30, 27, 46, 0.95), rgba(19, 17, 28, 0.98));
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 14px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      flex-wrap: wrap;
+    }
+    .brand-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .brand-icon-wrap {
+      width: 38px; height: 38px;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+    }
+    .brand-icon-wrap svg { width: 20px; height: 20px; fill: #ffffff; }
+    .brand-title { font-size: 1.05rem; font-weight: 800; color: #ffffff; letter-spacing: -0.3px; }
+    .brand-sub { font-size: 0.65rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; }
+
+    /* Header Action Buttons */
+    .header-actions { display: flex; align-items: center; gap: 6px; }
+    .import-json-label {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.25));
+      border: 1px solid rgba(216, 180, 254, 0.4);
+      color: #f3e8ff;
+      padding: 7px 11px;
+      border-radius: 9px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .import-json-label:hover {
+      border-color: var(--purple);
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.4), rgba(236, 72, 153, 0.4));
+    }
+    .import-json-label svg { width: 14px; height: 14px; fill: currentColor; }
+
+    /* Cards */
+    .card {
+      background: rgba(22, 22, 34, 0.9);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+    .card-title {
+      font-size: 0.75rem; font-weight: 800; color: #d8b4fe;
+      margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between;
+      text-transform: uppercase; letter-spacing: 0.7px; gap: 6px; flex-wrap: wrap;
+    }
+    .card-title-left { display: flex; align-items: center; gap: 6px; }
+    .card-title svg { width: 14px; height: 14px; fill: #d8b4fe; flex-shrink: 0; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .stack { display: flex; flex-direction: column; gap: 10px; }
+    .field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+    .field-header { display: flex; justify-content: space-between; align-items: center; gap: 4px; }
+    .field label { font-size: 0.66rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; }
+
+    .bg-status {
+      font-size: 0.6rem; font-weight: 700; padding: 2px 6px; border-radius: 5px;
+      text-transform: uppercase; letter-spacing: 0.3px;
+    }
+    .status-ok { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .status-warn { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+    .url-row { display: flex; gap: 6px; flex-wrap: wrap; }
+    .url-row input[type="text"] { flex: 1; min-width: 140px; }
+    .upload-btn, select.preset-select {
+      background: #1f1f2e; border: 1px solid var(--border); color: #d8b4fe;
+      padding: 0 9px; border-radius: 9px; font-size: 0.7rem; font-weight: 700;
+      cursor: pointer; display: flex; align-items: center; gap: 4px; white-space: nowrap;
+      flex-shrink: 0; outline: none; height: 34px;
+    }
+    .upload-btn:hover, select.preset-select:hover { border-color: var(--purple); }
+
+    input[type="text"] {
+      background: #0f0f18; border: 1px solid var(--border); color: #ffffff;
+      padding: 8px 10px; border-radius: 9px; font-size: 0.8rem; outline: none; width: 100%;
+    }
+    input[type="text"]:focus { border-color: var(--purple); box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.2); }
+
+    input[type="range"] {
+      -webkit-appearance: none; appearance: none; width: 100%; height: 8px; border-radius: 4px;
+      background: #0f0f18; outline: none; border: 1px solid var(--border); margin-top: 4px;
+      cursor: pointer; position: relative; z-index: 5;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 50%;
+      background: var(--purple); cursor: pointer; box-shadow: 0 0 8px rgba(168, 85, 247, 0.8);
+      border: 2px solid #ffffff;
+    }
+
+    /* Color Grid & Platform Tabs */
+    .palette-tabs {
+      display: flex; background: #0d0d16; padding: 3px; border-radius: 8px;
+      border: 1px solid var(--border); gap: 3px; margin-bottom: 10px;
+    }
+    .palette-tab {
+      flex: 1; padding: 5px 8px; border-radius: 6px; font-size: 0.65rem; font-weight: 800;
+      cursor: pointer; border: none; background: transparent; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.4px; transition: all 0.2s; text-align: center;
+    }
+    .palette-tab.active {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: #ffffff; box-shadow: 0 2px 8px rgba(168, 85, 247, 0.35);
+    }
+
+    .color-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 8px; }
+    .color-item {
+      background: #0f0f18; border: 1px solid var(--border); border-radius: 10px;
+      padding: 7px 9px; display: flex; align-items: center; gap: 8px;
+    }
+    .swatch-wrap {
+      position: relative; width: 30px; height: 30px; border-radius: 7px; overflow: hidden; flex-shrink: 0;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    .swatch-wrap input[type="color"] { position: absolute; inset: -8px; width: 46px; height: 46px; border: none; cursor: pointer; background: none; }
+    .color-info { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+    .color-info span { font-size: 0.58rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; }
+    .color-info input[type="text"] { background: transparent; border: none; padding: 0; font-family: monospace; font-size: 0.75rem; font-weight: 700; color: #ffffff; height: auto; }
+
+    /* Live Discord Preview Panel */
+    .discord-app-mock {
+      border-radius: 12px; overflow: hidden; border: 1px solid var(--border);
+      position: relative; height: 245px; display: flex; flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); margin-top: 4px;
+    }
+    .mock-bg-layer {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center; background-repeat: no-repeat;
+      z-index: 0; pointer-events: none; overflow: hidden;
+      will-change: opacity, filter, transform;
+      transform: translateZ(0);
+    }
+
+    /* Built-in CSS Anime Art Fallbacks */
+    .anime-scene {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      will-change: opacity, filter, transform;
+      transform: translateZ(0);
+    }
+    .anime-scene.scene-sunset {
+      background: linear-gradient(180deg, #1a0933 0%, #6b1d4f 38%, #d94e1f 72%, #ffaa33 100%);
+    }
+    .anime-scene.scene-night {
+      background: linear-gradient(160deg, #050517 0%, #141852 55%, #4b1d70 100%);
+    }
+    .anime-scene.scene-manga {
+      background: linear-gradient(90deg, #141419 0%, #141419 50%, #f3f4f6 50%, #f3f4f6 100%);
+    }
+    .anime-sun {
+      position: absolute; right: 14%; top: 14%; width: 105px; height: 105px; border-radius: 50%;
+      background: #fffdf2;
+      box-shadow: 0 0 35px 15px rgba(255, 210, 100, 0.7), 0 0 80px 30px rgba(255, 107, 26, 0.45);
+    }
+    .scene-night .anime-sun {
+      background: #ffffff;
+      box-shadow: 0 0 35px 12px rgba(200, 225, 255, 0.55), 0 0 70px 25px rgba(0, 240, 255, 0.25);
+    }
+    .scene-manga .anime-sun {
+      right: calc(50% - 52px); top: 24%;
+      background: #ff4500;
+      box-shadow: 0 0 0 12px rgba(255, 69, 0, 0.25);
+    }
+    .anime-clouds {
+      position: absolute; inset: 0;
+      background: 
+        radial-gradient(ellipse 160px 26px at 25% 42%, rgba(255, 209, 163, 0.48) 0%, transparent 70%),
+        radial-gradient(ellipse 210px 32px at 70% 34%, rgba(255, 148, 77, 0.4) 0%, transparent 75%);
+    }
+    .anime-mountains {
+      position: absolute; inset: 0;
+      background: #471323;
+      clip-path: polygon(0% 100%, 0% 54%, 15% 40%, 31% 58%, 48% 42%, 67% 62%, 84% 47%, 100% 56%, 100% 100%);
+    }
+    .scene-night .anime-mountains { background: #120e36; }
+    .scene-manga .anime-mountains { background: #2c2c38; opacity: 0.85; }
+    .anime-village {
+      position: absolute; inset: 0;
+      background: #140610;
+      clip-path: polygon(0% 100%, 0% 72%, 12% 72%, 16% 62%, 20% 72%, 34% 74%, 40% 55%, 37% 55%, 44% 46%, 51% 55%, 48% 55%, 54% 74%, 76% 75%, 82% 62%, 88% 75%, 100% 72%, 100% 100%);
+    }
+    .scene-night .anime-village { background: #070514; }
+    .scene-manga .anime-village { background: #09090c; }
+
+    .mock-header-bar { height: 34px; z-index: 2; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.74rem; font-weight: 700; }
+    .mock-body-split { flex: 1; display: flex; z-index: 2; overflow: hidden; }
+    .mock-sidebar { width: 112px; padding: 8px; display: flex; flex-direction: column; gap: 4px; font-size: 0.64rem; border-right: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; }
+    .mock-chat-pane { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 9px; min-width: 0; }
+    .mock-msg-list { display: flex; flex-direction: column; gap: 8px; }
+    .mock-msg-card { display: flex; gap: 7px; align-items: flex-start; }
+    .mock-avatar { width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, var(--purple), var(--pink)); display: flex; align-items: center; justify-content: center; font-size: 0.66rem; font-weight: 800; color: #fff; flex-shrink: 0; }
+    .mock-input-container { border-radius: 8px; padding: 6px 10px; display: flex; align-items: center; justify-content: space-between; font-size: 0.68rem; }
+
+    /* Format Switcher Tabs (JSON vs Vencord CSS) */
+    .format-tabs {
+      display: flex; background: #0d0d16; padding: 3px; border-radius: 9px;
+      border: 1px solid var(--border); gap: 3px;
+    }
+    .format-tab {
+      padding: 4px 9px; border-radius: 6px; font-size: 0.64rem; font-weight: 800;
+      cursor: pointer; border: none; background: transparent; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.4px; transition: all 0.2s;
+    }
+    .format-tab.active {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: #ffffff; box-shadow: 0 2px 8px rgba(168, 85, 247, 0.35);
+    }
+
+    /* Output Terminal */
+    textarea {
+      width: 100%; height: 155px; background: #07070c; color: #d8b4fe;
+      border: 1px solid var(--border); border-radius: 10px; padding: 10px;
+      font-family: monospace; font-size: 0.72rem; resize: vertical; outline: none;
+    }
+    textarea.css-mode { color: #67e8f9; border-color: rgba(103, 232, 249, 0.3); }
+    textarea:focus { border-color: var(--purple); }
+
+    .btn-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+    .btn-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 8px; }
+    button {
+      padding: 10px 6px; border-radius: 9px; border: none; font-weight: 700; font-size: 0.75rem;
+      cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;
+      transition: opacity 0.2s;
+    }
+    button:hover { opacity: 0.9; }
+    .btn-primary { background: linear-gradient(135deg, var(--purple), var(--pink)); color: #ffffff; box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4); }
+    .btn-secondary { background: #1f1f2e; color: #e5e7eb; border: 1px solid var(--border); }
+    .btn-accent { background: rgba(168, 85, 247, 0.18); color: #e9d5ff; border: 1px solid rgba(168, 85, 247, 0.4); }
+    .btn-vencord {
+      background: linear-gradient(135deg, #06b6d4, #3b82f6); color: #ffffff;
+      box-shadow: 0 4px 14px rgba(6, 182, 212, 0.3);
+    }
+    .btn-vencord-sec {
+      background: rgba(6, 182, 212, 0.14); color: #67e8f9;
+      border: 1px solid rgba(6, 182, 212, 0.35);
+    }
+  </style>
+</head>
+<body>
+<div class="app-shell" id="appShell">
+  <!-- One-Click Chrome Side Panel File Generator -->
+  
+
+  <!-- Header with Direct JSON/CSS Upload -->
+  <div class="brand-header">
+    <div class="brand-left">
+      <div class="brand-icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.5c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.23 19.26 10.58 19.5 12 19.5c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg>
+      </div>
+      <div>
+        <div class="brand-title">iLLusive Theme Builder</div>
+        <div class="brand-sub" id="importFeedback">Mobile JSON + PC Vencord CSS</div>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <label class="import-json-label" title="Upload or Drag-and-Drop an existing .json or .css theme">
+        <svg viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"></path></svg>
+        Import Theme
+        <input type="file" id="importJsonFile" accept=".json,.css,application/json,text/css" style="display: none;">
+      </label>
+    </div>
+  </div>
+
+  <!-- Metadata -->
+  <div class="card">
+    <div class="card-title">
+      <div class="card-title-left">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path></svg>
+        Theme Metadata &amp; Description
+      </div>
+      <span id="metaImportBadge" class="bg-status status-ok" style="display: none;">Saved!</span>
+    </div>
+    <div class="stack">
+      <div class="grid-2">
+        <div class="field"><label>Theme Name</label><input type="text" id="themeName" value="Will of Fire"></div>
+        <div class="field"><label>Author Name</label><input type="text" id="authorName" value="iLLusive Studio"></div>
+      </div>
+      <div class="grid-2">
+        <div class="field"><label>Description</label><input type="text" id="themeDesc" value="Naruto theme."></div>
+        <div class="field"><label>Discord ID</label><input type="text" id="authorId" value="879393496627306587"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Color Palette (Separated Mobile vs PC Tabs) -->
+  <div class="card">
+    <div class="card-title">
+      <div class="card-title-left">
+        <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.5c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.23 19.26 10.58 19.5 12 19.5c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg>
+        <span id="paletteCardTitle">Color Palette Engine (Mobile Spec v2)</span>
+      </div>
+    </div>
+
+    <!-- Platform Selector Tabs -->
+    <div class="palette-tabs">
+      <button class="palette-tab active" id="paletteMobileBtn" type="button">📱 Mobile Spec v2 Palette</button>
+      <button class="palette-tab" id="palettePcBtn" type="button">💻 PC Vencord Palette (9 Vars)</button>
+    </div>
+
+    <!-- Mobile Palette Grid (6 Colors) -->
+    <div class="color-grid" id="mobilePaletteGrid">
+      <div class="color-item">
+        <div class="swatch-wrap"><input type="color" id="cBgMainPicker" value="#E57E17"></div>
+        <div class="color-info"><span>Main BG</span><input type="text" id="cBgMainText" value="#E57E17"></div>
+      </div>
+      <div class="color-item">
+        <div class="swatch-wrap"><input type="color" id="cBgDarkPicker" value="#7A3200"></div>
+        <div class="color-info"><span>Dark Shade</span><input type="text" id="cBgDarkText" value="#7A3200"></div>
+      </div>
+      <div class="color-item">
+        <div class="swatch-wrap"><input type="color" id="cAccentPicker" value="#B85305"></div>
+        <div class="color-info"><span>Accent</span><input type="text" id="cAccentText" value="#B85305"></div>
+      </div>
+      <div class="color-item">
+        <div class="swatch-wrap"><input type="color" id="cTextMainPicker" value="#FFFFFF"></div>
+        <div class="color-info"><span>Text Main</span><input type="text" id="cTextMainText" value="#FFFFFF"></div>
+      </div>
+      <div class="color-item">
+        <div class="swatch-wrap"><input type="color" id="cTextMutedPicker" value="#FFD48A"></div>
+        <div class="color-info"><span>Muted</span><input type="text" id="cTextMutedText" value="#FFD48A"></div>
+      </div>
+      <div class="color-item">
+        <div class="swatch-wrap"><input type="color" id="cLinkPicker" value="#5C2400"></div>
+        <div class="color-info"><span>Links</span><input type="text" id="cLinkText" value="#5C2400"></div>
+      </div>
+    </div>
+
+    <!-- PC Vencord Palette Grid (9 Variables) -->
+    <div class="color-grid" id="pcPaletteGrid" style="display: none;">
+      <div class="color-item" title="--activetext-colour">
+        <div class="swatch-wrap"><input type="color" id="pcActiveTextPicker" value="#FFFFFF"></div>
+        <div class="color-info"><span>Active Text</span><input type="text" id="pcActiveText" value="#FFFFFF"></div>
+      </div>
+      <div class="color-item" title="--primary1-colour (Accent)">
+        <div class="swatch-wrap"><input type="color" id="pcPri1Picker" value="#B85305"></div>
+        <div class="color-info"><span>Primary 1</span><input type="text" id="pcPri1" value="#B85305"></div>
+      </div>
+      <div class="color-item" title="--primary3-colour (Dark Headers/Mentions)">
+        <div class="swatch-wrap"><input type="color" id="pcPri3Picker" value="#7A3200"></div>
+        <div class="color-info"><span>Primary 3</span><input type="text" id="pcPri3" value="#7A3200"></div>
+      </div>
+      <div class="color-item" title="--secondary1-colour (Message Cards)">
+        <div class="swatch-wrap"><input type="color" id="pcSec1Picker" value="#E57E17"></div>
+        <div class="color-info"><span>Secondary 1</span><input type="text" id="pcSec1" value="#E57E17"></div>
+      </div>
+      <div class="color-item" title="--secondary2-colour (Hover States)">
+        <div class="swatch-wrap"><input type="color" id="pcSec2Picker" value="#E57E17"></div>
+        <div class="color-info"><span>Secondary 2</span><input type="text" id="pcSec2" value="#E57E17"></div>
+      </div>
+      <div class="color-item" title="--secondary3-colour (Inputs &amp; Popouts)">
+        <div class="swatch-wrap"><input type="color" id="pcSec3Picker" value="#7A3200"></div>
+        <div class="color-info"><span>Secondary 3</span><input type="text" id="pcSec3" value="#7A3200"></div>
+      </div>
+      <div class="color-item" title="--secondary4-colour (App Backdrop)">
+        <div class="swatch-wrap"><input type="color" id="pcSec4Picker" value="#7A3200"></div>
+        <div class="color-info"><span>Secondary 4</span><input type="text" id="pcSec4" value="#7A3200"></div>
+      </div>
+      <div class="color-item" title="Text Muted">
+        <div class="swatch-wrap"><input type="color" id="pcTextMutedPicker" value="#FFD48A"></div>
+        <div class="color-info"><span>Text Muted</span><input type="text" id="pcTextMuted" value="#FFD48A"></div>
+      </div>
+      <div class="color-item" title="Text Link">
+        <div class="swatch-wrap"><input type="color" id="pcLinkPicker" value="#5C2400"></div>
+        <div class="color-info"><span>Text Link</span><input type="text" id="pcLink" value="#5C2400"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wallpaper & Live Preview -->
+  <div class="card">
+    <div class="card-title">
+      <div class="card-title-left">
+        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"></path></svg>
+        Wallpaper &amp; Live Visibility Test
+      </div>
+      <span id="bgStatusBadge" class="bg-status status-warn">Fallback Anime BG</span>
+    </div>
+    <div class="stack">
+      <div class="field">
+        <div class="field-header">
+          <label>Background Image URL (--background)</label>
+        </div>
+        <div class="url-row">
+          <input type="text" id="bgUrl" value="https://cdn.discordapp.com/attachments/1558846784623738891/1560689180135399515/Picsart_26-10-17_00-18-26-664.png" placeholder="Paste image URL...">
+          <select id="fallbackPreset" class="preset-select">
+            <option value="scene-sunset">Anime Sunset</option>
+            <option value="scene-night">Cyber Shrine</option>
+            <option value="scene-manga">Manga Contrast</option>
+          </select>
+          <label class="upload-btn" title="Browse your computer for a test wallpaper">
+            Bg File
+            <input type="file" id="localBgInput" accept="image/*" style="display: none;">
+          </label>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="field">
+          <label>Opacity: <span id="alphaVal">1.00</span></label>
+          <input type="range" id="bgAlpha" value="1" min="0" max="1" step="0.05">
+        </div>
+        <div class="field">
+          <label>Blur: <span id="blurVal">0</span>px</label>
+          <input type="range" id="bgBlur" value="0" min="0" max="25" step="1">
+        </div>
+      </div>
+
+      <!-- Live Preview Component -->
+      <div class="discord-app-mock" id="mockApp">
+        <div class="mock-bg-layer" id="mockBg">
+          <div class="anime-scene scene-sunset" id="animeFallbackLayer">
+            <div class="anime-sun"></div>
+            <div class="anime-clouds"></div>
+            <div class="anime-mountains"></div>
+            <div class="anime-village"></div>
+          </div>
+        </div>
+        <div class="mock-header-bar" id="mockHeaderBar">
+          <span># general-chat</span>
+          <span>🔔 👥</span>
+        </div>
+        <div class="mock-body-split">
+          <div class="mock-sidebar" id="mockSidebar">
+            <div style="font-weight: 700; margin-bottom: 3px; padding: 3px 6px; border-radius: 6px;" id="mockServerName">iLLusive Studio</div>
+            <div style="opacity: 0.7; font-size: 0.56rem;">TEXT CHANNELS</div>
+            <div style="padding: 3px 6px; border-radius: 6px 0 0 6px; font-weight: 600;" id="mockChanActive"># general-chat</div>
+            <div style="padding: 3px 6px; border-radius: 6px 0 0 6px; font-weight: 500;" id="mockChanMuted"># art-showcase</div>
+            <div style="padding: 3px 6px; border-radius: 6px 0 0 6px; font-weight: 500;" id="mockChanMuted2"># theme-releases</div>
+          </div>
+          <div class="mock-chat-pane">
+            <div class="mock-msg-list">
+              <div class="mock-msg-card" id="mockCozyMsg" style="padding: 5px 8px; border-radius: 6px;">
+                <div class="mock-avatar">iL</div>
+                <div style="display: flex; flex-direction: column; gap: 2px; font-size: 0.7rem; flex: 1; min-width: 0;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <span style="font-weight: 700;" id="mockUser">iLLusive Studio</span>
+                    <span style="font-size: 0.58rem;" id="mockTime">1:18 AM</span>
+                  </div>
+                  <span id="mockMsgText">Cozy message card using separate PC/Mobile palettes!</span>
+                  <div style="display: flex; align-items: center; gap: 6px; margin-top: 2px; flex-wrap: wrap;">
+                    <span id="mockMention" style="padding: 1px 5px; border-radius: 4px; font-weight: 700; font-size: 0.62rem;">@Naruto</span>
+                    <span id="mockLink" style="text-decoration: underline; font-weight: 600; font-size: 0.64rem; cursor: pointer;">https://illusive.studio</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mock-msg-card" id="mockReplyRow" style="padding: 4px 8px; border-radius: 6px;">
+                <div style="font-size: 0.64rem;">
+                  <span id="mockMutedSample" style="font-weight: 600;">Mentioned Row:</span>
+                  <span id="mockNormalSample"> Contrast check active.</span>
+                </div>
+              </div>
+            </div>
+            <div class="mock-input-container" id="mockInputBox">
+              <span id="mockPlaceholder">Message #general-chat</span>
+              <span>🎁</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Export Terminal: JSON + Vencord CSS Converter -->
+  <div class="card">
+    <div class="card-title">
+      <div class="card-title-left">
+        <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg>
+        <span id="outputCardTitle">Theme Code Output</span>
+      </div>
+      <div class="format-tabs">
+        <button class="format-tab active" id="tabJsonBtn" type="button">Spec v2 .JSON</button>
+        <button class="format-tab" id="tabCssBtn" type="button">Vencord .CSS</button>
+      </div>
+    </div>
+
+    <textarea id="jsonOutput" spellcheck="false" placeholder="Paste existing theme JSON or CSS here and click 'Load Pasted', or switch to Vencord .CSS tab..."></textarea>
+
+    <!-- Row 1: Spec v2 JSON Actions -->
+    <div class="btn-row-3">
+      <button class="btn-primary" id="copyBtn" type="button">Copy JSON</button>
+      <button class="btn-accent" id="parsePastedBtn" type="button" title="Extract colors from JSON or CSS pasted into box">⚡ Load Pasted</button>
+      <button class="btn-secondary" id="downloadBtn" type="button">Save .json</button>
+    </div>
+
+    <!-- Row 2: Vencord / BetterDiscord CSS Actions -->
+    <div class="btn-row-2">
+      <button class="btn-vencord" id="copyCssBtn" type="button">✨ Copy Vencord CSS</button>
+      <button class="btn-vencord-sec" id="downloadCssBtn" type="button">💾 Save .theme.css</button>
+    </div>
+  </div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

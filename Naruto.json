@@ -239,10 +239,10 @@
             "toast_image_saved": "#FFFFFF"
         }
     },
-    "background": {
-        "blur": 0,
-        "url": "https://cdn.discordapp.com/attachments/1558846784623738891/1560689180135399515/Picsart_26-10-17_00-18-26-664.png?ex=6ad4f210&is=6ad3a090&hm=b887cae63613a232ad391d786ec4a8b7f3ddfeef7e3520ddbb3d97c59a7e8b75",
-        "alpha": 0.5
+   "background": {
+    "blur": 0,
+    "url": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/naruto.png",
+    "alpha": 0.5
     },
     "spec": 2
 }

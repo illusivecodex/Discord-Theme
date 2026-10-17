@@ -1,7 +1,7 @@
 {
     "name": "Pika",
     "description": "For my lovely wiffu Jinssi Cruise",
-    "version": "17.0.0",
+    "version": "18.0.0",
     "authors": [
         {
             "name": "iLLusive Studio",
@@ -12,9 +12,11 @@
         "ANDROID_RIPPLE": [
             "#D94D3A33",
             "#D94D3A33",
+            "#D94D3A33",
             "#D94D3A33"
         ],
         "PANEL_BG": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -22,9 +24,11 @@
         "CHAT_BACKGROUND": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "HOME_BACKGROUND": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -32,9 +36,11 @@
         "BACKGROUND_PRIMARY": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "BACKGROUND_SECONDARY": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -42,9 +48,11 @@
         "BACKGROUND_SECONDARY_ALT": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "BACKGROUND_TERTIARY": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -52,9 +60,11 @@
         "BACKGROUND_MOBILE_PRIMARY": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "BACKGROUND_MOBILE_SECONDARY": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -62,9 +72,11 @@
         "BACKGROUND_FLOATING": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "BACKGROUND_NESTED_FLOATING": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -72,9 +84,11 @@
         "BACKGROUND_ACCENT": [
             "#D94D3A",
             "#D94D3A",
+            "#D94D3A",
             "#D94D3A"
         ],
         "BACKGROUND_MENTIONED": [
+            "#D94D3A33",
             "#D94D3A33",
             "#D94D3A33",
             "#D94D3A33"
@@ -82,9 +96,11 @@
         "BACKGROUND_MENTIONED_HOVER": [
             "#D94D3A4D",
             "#D94D3A4D",
+            "#D94D3A4D",
             "#D94D3A4D"
         ],
         "BACKGROUND_MESSAGE_HOVER": [
+            "#F8C7184D",
             "#F8C7184D",
             "#F8C7184D",
             "#F8C7184D"
@@ -92,9 +108,11 @@
         "BACKGROUND_MODIFIER_HOVER": [
             "#D94D3A33",
             "#D94D3A33",
+            "#D94D3A33",
             "#D94D3A33"
         ],
         "BACKGROUND_MODIFIER_ACTIVE": [
+            "#D94D3A4D",
             "#D94D3A4D",
             "#D94D3A4D",
             "#D94D3A4D"
@@ -102,9 +120,11 @@
         "BACKGROUND_MODIFIER_SELECTED": [
             "#D94D3A66",
             "#D94D3A66",
+            "#D94D3A66",
             "#D94D3A66"
         ],
         "BACKGROUND_MODIFIER_ACCENT": [
+            "#D94D3A33",
             "#D94D3A33",
             "#D94D3A33",
             "#D94D3A33"
@@ -112,9 +132,11 @@
         "BG_BACKDROP": [
             "#000000B3",
             "#000000B3",
+            "#000000B3",
             "#000000B3"
         ],
         "BG_BASE_PRIMARY": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -122,9 +144,11 @@
         "BG_BASE_SECONDARY": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "BG_BASE_TERTIARY": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -132,9 +156,11 @@
         "BG_SURFACE_OVERLAY": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "BG_SURFACE_OVERLAY_TMP": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -142,9 +168,35 @@
         "BG_SURFACE_RAISED": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "BG_SURFACE_DEFAULT": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "BG_SURFACE_LOW": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "BG_SURFACE_HIGH": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "BG_SURFACE_HIGHER": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "BG_MOD_FAINT": [
+            "#D94D3A1A",
             "#D94D3A1A",
             "#D94D3A1A",
             "#D94D3A1A"
@@ -152,14 +204,53 @@
         "BG_MOD_SUBTLE": [
             "#D94D3A33",
             "#D94D3A33",
+            "#D94D3A33",
             "#D94D3A33"
         ],
         "BG_MOD_STRONG": [
             "#D94D3A66",
             "#D94D3A66",
+            "#D94D3A66",
             "#D94D3A66"
         ],
+        "SURFACE_PRIMARY": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "SURFACE_SECONDARY": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "SURFACE_TERTIARY": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "SURFACE_FLOATING": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "SURFACE_OVERLAY": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
         "CARD_PRIMARY_BG": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "CARD_PRIMARY_PRESSED_BG": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -167,9 +258,11 @@
         "CARD_SECONDARY_BG": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "CHANNELTEXTAREA_BACKGROUND": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -177,14 +270,83 @@
         "CHAT_INPUT_CONTAINER_BACKGROUND": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "INPUT_BACKGROUND": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
+        "INPUT_FOCUSED_BORDER": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
+        ],
         "MODAL_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "SHEET_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "ACTION_SHEET_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "POPOUT_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "DRAWER_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "NAVIGATION_BAR_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "TAB_BAR_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "Bottom_SHEET_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "EMBED_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "SPOILER_HIDDEN_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "SPOILER_REVEALED_BACKGROUND": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -192,9 +354,11 @@
         "NAVIGATOR_HEADER_TINT": [
             "#2A1C0D",
             "#2A1C0D",
+            "#2A1C0D",
             "#2A1C0D"
         ],
         "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -202,9 +366,59 @@
         "REDESIGN_ACTIVITY_CARD_BACKGROUND_PRESSED": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
+        "REDESIGN_ACTIVITY_CARD_BORDER": [
+            "#D94D3A33",
+            "#D94D3A33",
+            "#D94D3A33",
+            "#D94D3A33"
+        ],
+        "REDESIGN_BUTTON_PRIMARY_BACKGROUND": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
+        ],
+        "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [
+            "#E4782E",
+            "#E4782E",
+            "#E4782E",
+            "#E4782E"
+        ],
+        "REDESIGN_BUTTON_PRIMARY_TEXT": [
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D"
+        ],
+        "REDESIGN_BUTTON_PRIMARY_ALT_BACKGROUND": [
+            "#D94D3A26",
+            "#D94D3A26",
+            "#D94D3A26",
+            "#D94D3A26"
+        ],
+        "REDESIGN_BUTTON_PRIMARY_ALT_BORDER": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
+        ],
+        "REDESIGN_BUTTON_PRIMARY_ALT_TEXT": [
+            "#AD412F",
+            "#AD412F",
+            "#AD412F",
+            "#AD412F"
+        ],
         "REDESIGN_BUTTON_SECONDARY_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "REDESIGN_BUTTON_SECONDARY_PRESSED_BACKGROUND": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -212,9 +426,11 @@
         "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "REDESIGN_BUTTON_SECONDARY_BORDER": [
+            "#D94D3A",
             "#D94D3A",
             "#D94D3A",
             "#D94D3A"
@@ -222,9 +438,23 @@
         "REDESIGN_BUTTON_SECONDARY_TEXT": [
             "#2A1C0D",
             "#2A1C0D",
+            "#2A1C0D",
             "#2A1C0D"
         ],
+        "REDESIGN_BUTTON_TERTIARY_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "REDESIGN_BUTTON_TERTIARY_TEXT": [
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8"
+        ],
         "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [
+            "#FCFAF8",
             "#FCFAF8",
             "#FCFAF8",
             "#FCFAF8"
@@ -232,14 +462,35 @@
         "REDESIGN_CHANNEL_NAME_TEXT": [
             "#2A1C0D",
             "#2A1C0D",
+            "#2A1C0D",
             "#2A1C0D"
+        ],
+        "REDESIGN_CHANNEL_NAME_MUTED_TEXT": [
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8"
         ],
         "REDESIGN_CHAT_INPUT_BACKGROUND": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
+        "REDESIGN_IMAGE_SPOILER_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "REDESIGN_INPUT_CONTROL_SELECTED": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
+        ],
         "REDESIGN_ONLY_BACKGROUND_ACTIVE": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -247,9 +498,11 @@
         "REDESIGN_ONLY_BACKGROUND_DEFAULT": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "REDESIGN_ONLY_BACKGROUND_OVERLAY": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
@@ -257,29 +510,77 @@
         "REDESIGN_ONLY_BACKGROUND_RAISED": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
         "REDESIGN_ONLY_BACKGROUND_SUNKEN": [
             "#F8C718",
             "#F8C718",
+            "#F8C718",
             "#F8C718"
         ],
-        "SCROLLBAR_THIN_THUMB": [
+        "CONTROL_BRAND_FOREGROUND": [
+            "#D94D3A",
             "#D94D3A",
             "#D94D3A",
             "#D94D3A"
         ],
-        "SCROLLBAR_AUTO_THUMB": [
+        "CONTROL_BRAND_FOREGROUND_NEW": [
+            "#D94D3A",
             "#D94D3A",
             "#D94D3A",
             "#D94D3A"
         ],
-        "SPOILER_HIDDEN_BACKGROUND": [
+        "CONTROL_PRIMARY_BACKGROUND": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
+        ],
+        "CONTROL_PRIMARY_TEXT": [
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D"
+        ],
+        "CONTROL_SECONDARY_BACKGROUND": [
+            "#F8C718",
             "#F8C718",
             "#F8C718",
             "#F8C718"
+        ],
+        "CONTROL_SECONDARY_TEXT": [
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D"
+        ],
+        "BUTTON_PRIMARY_BACKGROUND": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
+        ],
+        "BUTTON_SECONDARY_BACKGROUND": [
+            "#F8C718",
+            "#F8C718",
+            "#F8C718",
+            "#F8C718"
+        ],
+        "DIVIDER_STRONG": [
+            "#D94D3A66",
+            "#D94D3A66",
+            "#D94D3A66",
+            "#D94D3A66"
+        ],
+        "DIVIDER_SUBTLE": [
+            "#D94D3A33",
+            "#D94D3A33",
+            "#D94D3A33",
+            "#D94D3A33"
         ],
         "BORDER_FAINT": [
+            "#D94D3A26",
             "#D94D3A26",
             "#D94D3A26",
             "#D94D3A26"
@@ -287,24 +588,29 @@
         "BORDER_SUBTLE": [
             "#D94D3A4D",
             "#D94D3A4D",
+            "#D94D3A4D",
             "#D94D3A4D"
         ],
         "BORDER_STRONG": [
             "#D94D3A80",
             "#D94D3A80",
+            "#D94D3A80",
             "#D94D3A80"
         ],
-        "CHANNELS_DEFAULT": [
-            "#FCFAF8",
-            "#FCFAF8",
-            "#FCFAF8"
+        "SCROLLBAR_THIN_THUMB": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
         ],
-        "CHANNEL_ICON": [
-            "#FCFAF8",
-            "#FCFAF8",
-            "#FCFAF8"
+        "SCROLLBAR_AUTO_THUMB": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
         ],
         "HEADER_PRIMARY": [
+            "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D"
@@ -312,9 +618,11 @@
         "HEADER_SECONDARY": [
             "#FCFAF8",
             "#FCFAF8",
+            "#FCFAF8",
             "#FCFAF8"
         ],
         "TEXT_PRIMARY": [
+            "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D"
@@ -322,9 +630,17 @@
         "TEXT_NORMAL": [
             "#2A1C0D",
             "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D"
+        ],
+        "TEXT_DEFAULT": [
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D",
             "#2A1C0D"
         ],
         "TEXT_SECONDARY": [
+            "#FCFAF8",
             "#FCFAF8",
             "#FCFAF8",
             "#FCFAF8"
@@ -332,14 +648,65 @@
         "TEXT_MUTED": [
             "#FCFAF8",
             "#FCFAF8",
+            "#FCFAF8",
             "#FCFAF8"
+        ],
+        "TEXT_LOW_CONTRAST": [
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8"
+        ],
+        "TEXT_DISABLED": [
+            "#FCFAF880",
+            "#FCFAF880",
+            "#FCFAF880",
+            "#FCFAF880"
         ],
         "TEXT_LINK": [
             "#D94D3A",
             "#D94D3A",
+            "#D94D3A",
             "#D94D3A"
         ],
+        "TEXT_BRAND": [
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A",
+            "#D94D3A"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8"
+        ],
+        "CHANNEL_ICON": [
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8"
+        ],
+        "ICON_PRIMARY": [
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D",
+            "#2A1C0D"
+        ],
+        "ICON_SECONDARY": [
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8",
+            "#FCFAF8"
+        ],
+        "ICON_MUTED": [
+            "#FCFAF899",
+            "#FCFAF899",
+            "#FCFAF899",
+            "#FCFAF899"
+        ],
         "MENTION_FOREGROUND": [
+            "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D"
@@ -347,19 +714,23 @@
         "MENTION_BACKGROUND": [
             "#D94D3A4D",
             "#D94D3A4D",
+            "#D94D3A4D",
             "#D94D3A4D"
         ],
         "INTERACTIVE_NORMAL": [
-            "#FCFAF8",
-            "#FCFAF8",
-            "#FCFAF8"
-        ],
-        "INTERACTIVE_HOVER": [
+            "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D"
         ],
+        "INTERACTIVE_HOVER": [
+            "#AD412F",
+            "#AD412F",
+            "#AD412F",
+            "#AD412F"
+        ],
         "INTERACTIVE_ACTIVE": [
+            "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D",
             "#2A1C0D"
@@ -367,40 +738,84 @@
         "INTERACTIVE_MUTED": [
             "#FCFAF866",
             "#FCFAF866",
+            "#FCFAF866",
             "#FCFAF866"
         ]
     },
     "rawColors": {
-        "BRAND_260": "#2A1C0D",
+        "BRAND_100": "#2A1C0D",
+        "BRAND_130": "#2A1C0D",
+        "BRAND_160": "#2A1C0D",
+        "BRAND_200": "#AD412F",
+        "BRAND_230": "#AD412F",
+        "BRAND_260": "#AD412F",
+        "BRAND_300": "#AD412F",
+        "BRAND_330": "#D94D3A",
+        "BRAND_345": "#D94D3A",
         "BRAND_360": "#D94D3A",
+        "BRAND_400": "#D94D3A",
+        "BRAND_430": "#D94D3A",
+        "BRAND_460": "#D94D3A",
         "BRAND_500": "#D94D3A",
         "BRAND_530": "#D94D3A",
-        "BRAND_560": "#D94D3A",
-        "BRAND_600": "#F8C718",
+        "BRAND_560": "#E4782E",
+        "BRAND_600": "#E4782E",
+        "BRAND_630": "#E4782E",
+        "BRAND_660": "#F8C718",
+        "BRAND_700": "#F8C718",
+        "BRAND_730": "#F8C718",
+        "BRAND_760": "#A18110",
+        "BRAND_800": "#A18110",
+        "BRAND_830": "#A18110",
+        "BRAND_860": "#A18110",
+        "BRAND_900": "#A18110",
         "WHITE_500": "#2A1C0D",
         "WHITE_630": "#FCFAF8",
+        "BLUE_300": "#D94D3A",
         "BLUE_345": "#D94D3A",
+        "BLUE_400": "#D94D3A",
+        "BLUE_500": "#D94D3A",
         "PRIMARY_100": "#2A1C0D",
+        "PRIMARY_130": "#2A1C0D",
+        "PRIMARY_160": "#2A1C0D",
         "PRIMARY_200": "#2A1C0D",
-        "PRIMARY_300": "#FCFAF8",
+        "PRIMARY_230": "#2A1C0D",
+        "PRIMARY_260": "#2A1C0D",
+        "PRIMARY_300": "#2A1C0D",
+        "PRIMARY_330": "#2A1C0D",
+        "PRIMARY_345": "#FCFAF8",
         "PRIMARY_360": "#FCFAF8",
         "PRIMARY_400": "#FCFAF8",
+        "PRIMARY_430": "#FCFAF8",
+        "PRIMARY_460": "#FCFAF8",
         "PRIMARY_500": "#D94D3A",
+        "PRIMARY_530": "#F8C718",
+        "PRIMARY_560": "#F8C718",
         "PRIMARY_600": "#F8C718",
         "PRIMARY_630": "#F8C718",
+        "PRIMARY_645": "#F8C718",
         "PRIMARY_660": "#F8C718",
         "PRIMARY_700": "#F8C718",
+        "PRIMARY_730": "#F8C718",
+        "PRIMARY_760": "#A18110",
         "PRIMARY_800": "#A18110",
+        "PRIMARY_830": "#A18110",
+        "PRIMARY_860": "#A18110",
         "PRIMARY_900": "#A18110",
+        "PLUM_0": "#2A1C0D",
         "PLUM_1": "#2A1C0D",
         "PLUM_2": "#2A1C0D",
         "PLUM_3": "#2A1C0D",
         "PLUM_4": "#2A1C0D",
-        "PLUM_6": "#FCFAF8",
+        "PLUM_5": "#2A1C0D",
+        "PLUM_6": "#2A1C0D",
+        "PLUM_7": "#2A1C0D",
+        "PLUM_8": "#2A1C0D",
         "PLUM_9": "#FCFAF8",
         "PLUM_10": "#FCFAF8",
         "PLUM_11": "#FCFAF8",
-        "PLUM_13": "#D94D3A",
+        "PLUM_12": "#FCFAF8",
+        "PLUM_13": "#FCFAF8",
         "PLUM_14": "#D94D3A",
         "PLUM_15": "#F8C718",
         "PLUM_16": "#F8C718",
@@ -409,15 +824,16 @@
         "PLUM_19": "#F8C718",
         "PLUM_20": "#F8C718",
         "PLUM_21": "#F8C718",
-        "PLUM_22": "#F8C718",
-        "PLUM_23": "#F8C718",
+        "PLUM_22": "#A18110",
+        "PLUM_23": "#A18110",
         "PLUM_24": "#A18110",
-        "PLUM_25": "#A18110"
+        "PLUM_25": "#A18110",
+        "PLUM_26": "#A18110"
     },
     "background": {
         "blur": 0,
         "url": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/Pika.png",
-        "alpha": 0.25
+        "alpha": 0.3
     },
     "spec": 2
 }

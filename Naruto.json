@@ -1,7 +1,7 @@
 {
     "name": "Will of Fire",
     "description": "Naruto theme.",
-    "version": "18.0.0",
+    "version": "18.1.0",
     "authors": [
         {
             "name": "iLLusive Studio",
@@ -9,6 +9,138 @@
         }
     ],
     "semanticColors": {
+        "BACKGROUND_COLOR": [
+            "#E57E17",
+            "#E57E17",
+            "#E57E17",
+            "#E57E17"
+        ],
+        "BACKGROUND_IMAGE": [
+            "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/naruto.png",
+            "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/naruto.png",
+            "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/naruto.png",
+            "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/naruto.png"
+        ],
+        "BACKGROUND_POSITION": [
+            "center",
+            "center",
+            "center",
+            "center"
+        ],
+        "BACKGROUND_REPEAT": [
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat"
+        ],
+        "BACKGROUND_RETRY_MAX_ATTEMPTS": [
+            3,
+            3,
+            3,
+            3
+        ],
+        "BACKGROUND_RETRY_MAX_DELAY_MS": [
+            5000,
+            5000,
+            5000,
+            5000
+        ],
+        "BACKGROUND_SIZE": [
+            "cover",
+            "cover",
+            "cover",
+            "cover"
+        ],
+        "BRAND_DARK": [
+            "#7A3200",
+            "#7A3200",
+            "#7A3200",
+            "#7A3200"
+        ],
+        "BRAND_INVERTED": [
+            "#B85305",
+            "#B85305",
+            "#B85305",
+            "#B85305"
+        ],
+        "TEXT_ALIGN": [
+            "left",
+            "left",
+            "left",
+            "left"
+        ],
+        "TEXT_ALIGN_VERTICAL": [
+            "center",
+            "center",
+            "center",
+            "center"
+        ],
+        "TEXT_AND_IMAGE": [
+            "#FFFFFF",
+            "#FFFFFF",
+            "#FFFFFF",
+            "#FFFFFF"
+        ],
+        "TEXT_BREAK_STRATEGY": [
+            "simple",
+            "simple",
+            "simple",
+            "simple"
+        ],
+        "TEXT_BUTTON": [
+            "#5C2400",
+            "#5C2400",
+            "#5C2400",
+            "#5C2400"
+        ],
+        "TEXT_CHANNEL_HINT_REGEX": [
+            "#FFD48A",
+            "#FFD48A",
+            "#FFD48A",
+            "#FFD48A"
+        ],
+        "TEXT_COLOR": [
+            "#FFFFFF",
+            "#FFFFFF",
+            "#FFFFFF",
+            "#FFFFFF"
+        ],
+        "TEXT_DECORATION_LINE": [
+            "underline",
+            "underline",
+            "underline",
+            "underline"
+        ],
+        "TEXT_OUTLINE_COLOR": [
+            "#FFD48A",
+            "#FFD48A",
+            "#FFD48A",
+            "#FFD48A"
+        ],
+        "TEXT_SIZE": [
+            16,
+            16,
+            16,
+            16
+        ],
+        "TEXT_SIZE_ACCESSORY": [
+            12,
+            12,
+            12,
+            12
+        ],
+        "TEXT_SIZE_PRIMARY": [
+            16,
+            16,
+            16,
+            16
+        ],
+        "TEXT_WIDTH": [
+            "100%",
+            "100%",
+            "100%",
+            "100%"
+        ],
         "ANDROID_RIPPLE": [
             "#B8530533",
             "#B8530533",
@@ -743,6 +875,28 @@
         ]
     },
     "rawColors": {
+        "BACKGROUND_COLOR": "#E57E17",
+        "BACKGROUND_IMAGE": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/naruto.png",
+        "BACKGROUND_POSITION": "center",
+        "BACKGROUND_REPEAT": "no-repeat",
+        "BACKGROUND_RETRY_MAX_ATTEMPTS": 3,
+        "BACKGROUND_RETRY_MAX_DELAY_MS": 5000,
+        "BACKGROUND_SIZE": "cover",
+        "BRAND_DARK": "#7A3200",
+        "BRAND_INVERTED": "#B85305",
+        "TEXT_ALIGN": "left",
+        "TEXT_ALIGN_VERTICAL": "center",
+        "TEXT_AND_IMAGE": "#FFFFFF",
+        "TEXT_BREAK_STRATEGY": "simple",
+        "TEXT_BUTTON": "#5C2400",
+        "TEXT_CHANNEL_HINT_REGEX": "#FFD48A",
+        "TEXT_COLOR": "#FFFFFF",
+        "TEXT_DECORATION_LINE": "underline",
+        "TEXT_OUTLINE_COLOR": "#FFD48A",
+        "TEXT_SIZE": 16,
+        "TEXT_SIZE_ACCESSORY": 12,
+        "TEXT_SIZE_PRIMARY": 16,
+        "TEXT_WIDTH": "100%",
         "BRAND_100": "#FFFFFF",
         "BRAND_130": "#FFFFFF",
         "BRAND_160": "#FFFFFF",
@@ -833,7 +987,14 @@
     "background": {
         "blur": 0,
         "url": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/naruto.png",
-        "alpha": 1
+        "alpha": 1,
+        "BACKGROUND_IMAGE": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/naruto.png",
+        "BACKGROUND_COLOR": "#E57E17",
+        "BACKGROUND_POSITION": "center",
+        "BACKGROUND_REPEAT": "no-repeat",
+        "BACKGROUND_SIZE": "cover",
+        "BACKGROUND_RETRY_MAX_ATTEMPTS": 3,
+        "BACKGROUND_RETRY_MAX_DELAY_MS": 5000
     },
     "spec": 2
 }

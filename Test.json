@@ -15,6 +15,36 @@
         "CHAT_BACKGROUND": [
             "#601F8F"
         ],
+        "BACKGROUND_PRIMARY": [
+            "#601F8F"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#601F8F"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#601F8F"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#601F8F"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#601F8F"
+        ],
+        "BG_BASE_PRIMARY": [
+            "#601F8F"
+        ],
+        "BG_BASE_SECONDARY": [
+            "#601F8F"
+        ],
+        "BG_BASE_TERTIARY": [
+            "#601F8F"
+        ],
+        "BG_SURFACE_OVERLAY": [
+            "#601F8F"
+        ],
+        "BG_SURFACE_RAISED": [
+            "#601F8F"
+        ],
         "BACKGROUND_ACCENT": [
             "#9A3B60"
         ],

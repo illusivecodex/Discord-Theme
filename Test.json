@@ -15,8 +15,16 @@
         "BACKGROUND_TERTIARY": ["#601F8F", 1],
         "BACKGROUND_ACCENT": ["#9A3B60", 1],
         "BACKGROUND_FLOATING": ["#601F8F", 1],
+        "BACKGROUND_MOBILE_PRIMARY": ["#601F8F", 1],
+        "BACKGROUND_MOBILE_SECONDARY": ["#601F8F", 1],
         "BACKGROUND_MENTIONED": ["#9A3B60", 0.2],
+        "BACKGROUND_MENTIONED_HOVER": ["#9A3B60", 0.35],
         "CHANNELS_DEFAULT": ["#71CAED", 1],
+        "CHANNEL_ICON": ["#71CAED", 1],
+        "INTERACTIVE_ACTIVE": ["#E1A5E7", 1],
+        "INTERACTIVE_HOVER": ["#E1A5E7", 1],
+        "INTERACTIVE_MUTED": ["#71CAED", 1],
+        "INTERACTIVE_NORMAL": ["#E1A5E7", 1],
         "TEXT_LINK": ["#913252", 1],
         "TEXT_MUTED": ["#71CAED", 1],
         "TEXT_NORMAL": ["#E1A5E7", 1],
@@ -26,12 +34,15 @@
     "rawColors": {
         "BRAND_500": "#9A3B60",
         "WHITE_500": "#E1A5E7",
-        "WHITE_630": "#71CAED"
+        "WHITE_630": "#71CAED",
+        "PRIMARY_500": "#601F8F",
+        "PRIMARY_600": "#601F8F",
+        "PRIMARY_700": "#601F8F"
     },
     "background": {
         "blur": 0,
         "url": "https://image-5.uhdpaper.com/wallpaper/sung-jinwoo-shadow-summon-solo-leveling-arise-2k-wallpaper-uhdpaper.com-243@5@b.jpg",
         "alpha": 0.5
     },
-    "spec": 2
+    "spec": 3
 }

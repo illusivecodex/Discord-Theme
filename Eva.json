@@ -1155,7 +1155,7 @@
     "background": {
         "blur": 0,
         "url": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/Neon%20Genesis%20Evangelion.jpeg",
-        "alpha": 0.4
+        "alpha": 0.25
     },
     "spec": 2
 }

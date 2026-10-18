@@ -1154,8 +1154,8 @@
     },
     "background": {
         "blur": 0,
-        "url": "https://cdn.discordapp.com/attachments/1558846784623738891/1560725138398384281/Picsart_26-10-17_02-44-06-264.jpg?ex=6ad3c20d&is=6ad2708d&hm=180deedebf06d505160548be2040e8605a2de31b241b286a0a388d7632a3134d",
-        "alpha": 0.5
+        "url": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/paniki.png",
+        "alpha": 0.8
     },
     "spec": 2
 }

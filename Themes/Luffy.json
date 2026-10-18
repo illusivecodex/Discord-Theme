@@ -22,7 +22,7 @@
         "BACKGROUND_MOD_STRONG": ["rgba(235,230,253,0.45)", "rgba(235,230,253,0.45)", "rgba(235,230,253,0.45)", "rgba(235,230,253,0.45)", "rgba(235,230,253,0.45)"],
         "BACKGROUND_MOD_MUTED": ["rgba(235,230,253,0.12)", "rgba(235,230,253,0.12)", "rgba(235,230,253,0.12)", "rgba(235,230,253,0.12)", "rgba(235,230,253,0.12)"],
         "BACKGROUND_SCRIM_OPAQUE": ["#EBE6FD", "#EBE6FD", "#EBE6FD", "#EBE6FD", "#EBE6FD"],
-        "BACKGROUND_SCRIM_LIGHTBOX": ["#EBE6FDaD9", "#EBE6FDD9", "#EBE6FDD9", "#EBE6FDD9", "#EBE6FDD9"],
+        "BACKGROUND_SCRIM_LIGHTBOX": ["#EBE6FDD9", "#EBE6FDD9", "#EBE6FDD9", "#EBE6FDD9", "#EBE6FDD9"],
         "BACKGROUND_FEEDBACK_CRITICAL": ["#7356AA33", "#7356AA33", "#7356AA33", "#7356AA33", "#7356AA33"],
         "BACKGROUND_FEEDBACK_WARNING": ["#2D275733", "#2D275733", "#2D275733", "#2D275733", "#2D275733"],
         "BACKGROUND_FEEDBACK_POSITIVE": ["#7356AA33", "#7356AA33", "#7356AA33", "#7356AA33", "#7356AA33"],
@@ -1155,7 +1155,7 @@
     "background": {
         "blur": 0,
         "url": "https://raw.githubusercontent.com/illusivecodex/Discord-Theme/main/background/_%20(7).jpeg",
-        "alpha": 0.35
+        "alpha": 0.25
     },
     "spec": 2
 }
